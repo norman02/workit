@@ -1,17 +1,15 @@
-/* reset CSS  */
+/* ------ RESET CSS ------  */
 
 * {
-	border: 0;
-  
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 a {
@@ -19,18 +17,65 @@ a {
   color: inherit;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------ TYPOGRAPHY ------ */
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
+
+a {
+  font-family: "Manrope", sans-serif;
+  letter-spacing: -0.01rem;
+}
+
+h1 {
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+}
+
+h2 {
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+
+}
+
+.numbered-section-header {
+	font-size: 1.25rem;
+	line-height: 2.25rem;
 }
