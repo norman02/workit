@@ -1,3 +1,9 @@
+/* ------ TESTING ------ */
+/* contrast with all elements assure all backgrounds individually set  */
+html {
+  background-color: blue;
+}
+
 /* ------ RESET CSS ------  */
 
 * {
@@ -65,17 +71,16 @@ h1 {
 }
 
 h2 {
-	font-size: 2rem;
-	line-height: 3rem;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 h3 {
-	font-size: 1.75rem;
-	line-height: 2.25rem;
-
+  font-size: 1.75rem;
+  line-height: 2.25rem;
 }
 
 .numbered-section-header {
-	font-size: 1.25rem;
-	line-height: 2.25rem;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
 }
