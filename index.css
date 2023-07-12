@@ -4,6 +4,16 @@ html {
   background-color: blue;
 }
 
+/* hide images for text layout  */
+img {
+  display: none;
+}
+
+/* ensure text colors are set */
+html {
+  color: red;
+}
+
 /* ------ RESET CSS ------  */
 
 * {
@@ -43,9 +53,37 @@ table {
   border-spacing: 0;
 }
 
+/* ----- Variables ------ */
+
+:root {
+  /* color pallette  */
+  --dark-purple: #24053e;
+  --light-green: #44ffa1;
+  --gray-purple: #584d62;
+  --light-gray: #FCF8FF;
+  /* background colors  */
+  --dark-bg-color: var(--dark-purple);
+  --light-bg-color: var(--light-gray);
+  --green-bg-color: var(--light-green);
+  /* text colors  */
+  --light-text-color: white;
+  --btn-text-color: var(--dark-purple);
+  --heading-text-color: var(--dark-purple);
+  --primary-text-color: var(--gray-purple);
+  
+  /* Elements  */
+  --header-bg-color: var(--dark-purple);
+  --button-bg-color: var(--green-bg-color);
+  --body-bg-color: white;
+  --features-bg-color: var(--light-bg-color);
+  --cta-bg-color:var(--dark-purple);
+}
+
 /* ------ TYPOGRAPHY ------ */
 
 body {
+  background-color: var(--body-bg-color);
+  color: var(--primary-text-color);
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -56,6 +94,7 @@ body {
 h1,
 h2,
 h3 {
+  color: var(--heading-text-color);
   font-family: "Fraunces", serif;
   font-weight: 600;
 }
@@ -80,7 +119,32 @@ h3 {
   line-height: 2.25rem;
 }
 
+.features {
+  background-color: var(--features-bg-color);
+}
+
 .numbered-section-header {
   font-size: 1.25rem;
   line-height: 2.25rem;
 }
+
+/* ------ Header ------  */
+.header {
+  background-color: var(--header-bg-color);
+  color: var(--light-text-color);
+}
+
+/* ------ Buttons ------  */
+.button-link {
+  background-color: var(--button-bg-color);
+  color: var(--btn-text-color);
+}
+
+/* ------ CTA ------  */
+.cta {
+  background-color: var(--cta-bg-color);
+  color: var(--light-text-color);
+}
+
+
+
