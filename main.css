@@ -1,0 +1,78 @@
+/* ------ VARIABLES -------  */
+:root {
+  --light-green: hsl(150, 100%, 63%);
+  --dark-purple: hsl(273, 85%, 13%);
+  --navy-gray: hsl(271, 12%, 34%);
+  --purple-white: hsl(274, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+}
+/* ------ RESET CSS ------  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  font-size: 100%;
+  margin: unset;
+}
+
+ul {
+  padding-left: unset;
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+html {
+  font-feature-settings: normal;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+figure {
+  margin: unset;
+}
+
+::selection {
+  background-color: var(--light-green);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
