@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Manrope:wght@400;700&display=swap");
+
 /* ------ VARIABLES -------  */
 :root {
   --light-green: hsl(150, 100%, 63%);
@@ -5,7 +7,11 @@
   --navy-gray: hsl(271, 12%, 34%);
   --purple-white: hsl(274, 100%, 99%);
   --white: hsl(0, 0%, 100%);
+
+  --font-sans: Manrope, sans-serif;
+  --font-serif: Fraunces, serif;
 }
+
 /* ------ RESET CSS ------  */
 *,
 *::before,
@@ -75,4 +81,38 @@ figure {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ------ TYPOGRAPHY ------  */
+body {
+  text-rendering: optimizespeed;
+  font: clamp(1rem, 2vw, 1.125rem) / 1.778 var(--font-sans);
+  color: var(--dark-purple);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+}
+
+u {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 3px solid var(--light-green);
+}
+
+.heading-l {
+  font-size: clamp(3.125rem, 7vw, 5rem);
+  line-height: 1;
+}
+
+.heading-m {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.14;
+}
+
+.heading-s {
+  font-size: clamp(1.75rem, 5vw, 2rem);
+  line-height: 1.25;
 }
