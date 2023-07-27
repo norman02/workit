@@ -10,6 +10,8 @@
 
   --font-sans: Manrope, sans-serif;
   --font-serif: Fraunces, serif;
+
+  --trans-time: 0.50s;
 }
 
 /* ------ RESET CSS ------  */
@@ -115,4 +117,30 @@ u {
 .heading-s {
   font-size: clamp(1.75rem, 5vw, 2rem);
   line-height: 1.25;
+}
+/* ------ BUTTONS -------  */
+.button {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  background-color: var(--light-green);
+  border: 2px solid var(--light-green);
+  height: 3.75rem;
+  padding-inline: 2rem;
+  transition: background-color var(--trans-time), color var(--trans-time) ease-out;
+}
+
+.button:is(:hover, :focus-visible) {
+  background-color: transparent;
+  color: var(--light-green);
+}
+
+.link {
+  font-weight: bold;
+  border-bottom: 3px solid var(--light-green);
+  transition: color var(--trans-time) ease-out;
+}
+
+.link:is(:hover, :focus-visible) {
+  color: var(--light-green);
 }
