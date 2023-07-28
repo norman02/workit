@@ -11,7 +11,7 @@
   --font-sans: Manrope, sans-serif;
   --font-serif: Fraunces, serif;
 
-  --trans-time: 0.50s;
+  --trans-time: 0.5s;
 }
 
 /* ------ RESET CSS ------  */
@@ -127,7 +127,8 @@ u {
   border: 2px solid var(--light-green);
   height: 3.75rem;
   padding-inline: 2rem;
-  transition: background-color var(--trans-time), color var(--trans-time) ease-out;
+  transition: background-color var(--trans-time),
+    color var(--trans-time) ease-out;
 }
 
 .button:is(:hover, :focus-visible) {
@@ -143,4 +144,29 @@ u {
 
 .link:is(:hover, :focus-visible) {
   color: var(--light-green);
+}
+/* ------- HELPERS ------  */
+.bg-dark {
+  background-color: var(--dark-purple);
+}
+.container {
+  margin-inline: auto;
+  width: min(calc(100% - 2rem), 69.375rem);
+}
+.text-white {
+  color: var(--white);
+}
+
+/* ------ NAVIGATION -----  */
+.main-navigation {
+  align-items: center;
+  display: flex;
+  height: 9rem;
+  justify-content: space-between;
+}
+
+
+
+.main-navigation > .logo {
+  color: var(--white);
 }
