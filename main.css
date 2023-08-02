@@ -53,6 +53,7 @@ html {
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 img,
@@ -231,7 +232,6 @@ u {
 
   position: relative;
   padding-block: clamp(5rem, 30vw, 19.5625rem) clamp(1rem, 30vw, 5.25rem);
-
 }
 
 .about-list ul {
@@ -292,3 +292,119 @@ u {
     margin-block: 2.5rem 1.5rem;
   }
 }
+/* ------- CTA ------  */
+.cta {
+  display: flex;
+  margin-block: clamp(7rem, 30vw, 22rem) clamp(5rem, 20vw, 7.3125rem);
+}
+
+.cta .card {
+  padding: clamp(2rem, 5vw, 4rem);
+  position: relative;
+}
+
+.cta .card p {
+  margin-block: 2rem;
+}
+
+.cta figure {
+  z-index: -1;
+}
+
+@media (width < 57.5rem) {
+  .cta img {
+    max-width: 281px;
+  }
+}
+
+@media (width > 43.75rem) {
+  .cta {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .cta figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 0 -36%;
+  }
+
+  .cta .card {
+    align-self: flex-end;
+    max-width: clamp(32.125rem, 70vw, 45.625rem);
+  }
+
+  .cta .card::after {
+    content: "";
+    position: absolute;
+    width: 13.8125rem;
+    height: 13.25rem;
+    background: transparent url(assets/images/bg-pattern-3.svg) no-repeat;
+    right: 4.5rem;
+    bottom: -3.75rem;
+  }
+}
+
+@media (width < 43.75rem) {
+  .cta {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .cta .card {
+    text-align: center;
+  }
+
+  .cta figure {
+    translate: 0 15%;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+  color: var(--navy-gray);
+  margin-block: 3.25rem 6.25rem;
+}
+
+.social-links a {
+  display: flex;
+}
+
+.social-links a:is(:hover, :focus-visible) {
+  color: var(--light-green);
+}
+
+.social-links a:focus-visible {
+  outline: 2px solid var(--light-green);
+  outline-offset: 2px;
+}
+
+/* ***** TESTING *****  */
+.cta {
+  /* border: 2px solid red; */
+  /* display: none; */
+}
+
+.cta .card {
+  /* border: 2px solid orange; */
+}
+
+.cta .card::after {
+  /* display: none; */
+  /* border: 2px solid orange;
+  background-color: red; */
+}
+
+.cta figure {
+  /* display: none; */
+}
+
+html,
+body {
+
+  /* background-color: yellow; */
+}
+
